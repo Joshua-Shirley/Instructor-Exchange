@@ -1,0 +1,168 @@
+{
+    "vail": [
+        {
+            "name": "Afton Alps",
+            "location": "Hastings, Minnesota"
+        },
+        {
+            "name": "Alpine Valley",
+            "location": "Chesterland, Ohio"
+        },
+        {
+            "name": "Andermatt-Sedrun",
+            "location": "Andermatt"
+        },
+        {
+            "name": "Attitash Mountain",
+            "location": "Bartlett, New Hampshire"
+        },
+        {
+            "name": "Beaver Creek Resort",
+            "location": "Beaver Creek, Colorado"
+        },
+        {
+            "name": "Big Boulder",
+            "location": "Lake Harmony, Pennsylvania"
+        },
+        {
+            "name": "Boston Mills-Brandywine",
+            "location": "Peninsula, Ohio"
+        },
+        {
+            "name": "Breckenridge Ski Resort",
+            "location": "Breckenridge, Colorado"
+        },
+        {
+            "name": "Crans-Montana",
+            "location": "Crans-Montana"
+        },
+        {
+            "name": "Crested Butte Mountain Resort",
+            "location": "Crested Butte, Colorado"
+        },
+        {
+            "name": "Crotched Mountain",
+            "location": "Bennington, New Hampshire"
+        },
+        {
+            "name": "Falls Creek",
+            "location": "Bogong High Plains"
+        },
+        {
+            "name": "Heavenly Mountain Resort",
+            "location": "South Lake Tahoe, California"
+        },
+        {
+            "name": "Hidden Valley",
+            "location": "Eureka, Missouri"
+        },
+        {
+            "name": "Hidden Valley Resort (Pennsylvania)",
+            "location": "Hidden Valley, Pennsylvania"
+        },
+        {
+            "name": "Hotham Alpine Resort",
+            "location": "Mount Hotham"
+        },
+        {
+            "name": "Hunter Mountain",
+            "location": "Hunter, New York"
+        },
+        {
+            "name": "Jack Frost",
+            "location": "White Haven, Pennsylvania"
+        },
+        {
+            "name": "Keystone Resort",
+            "location": "Keystone, Colorado"
+        },
+        {
+            "name": "Kirkwood Mountain Resort",
+            "location": "Kirkwood, California"
+        },
+        {
+            "name": "Laurel Mountain",
+            "location": "Somerset County, Pennsylvania"
+        },
+        {
+            "name": "Liberty Mountain Resort",
+            "location": "Fairfield, Pennsylvania"
+        },
+        {
+            "name": "Mad River Mountain",
+            "location": "Zanesfield, Ohio"
+        },
+        {
+            "name": "Mount Brighton",
+            "location": "Brighton, Michigan"
+        },
+        {
+            "name": "Mount Snow",
+            "location": "West Dover, Vermont"
+        },
+        {
+            "name": "Mount Sunapee Resort",
+            "location": "Newbury, New Hampshire"
+        },
+        {
+            "name": "Northstar California",
+            "location": "Truckee, California"
+        },
+        {
+            "name": "Okemo Mountain Resort",
+            "location": "Ludlow, Vermont"
+        },
+        {
+            "name": "Paoli Peaks",
+            "location": "Paoli, Indiana"
+        },
+        {
+            "name": "Park City Mountain Resort",
+            "location": "Park City, Utah"
+        },
+        {
+            "name": "Perisher Ski Resort",
+            "location": "Perisher Valley"
+        },
+        {
+            "name": "Roundtop Mountain Resort",
+            "location": "Lewisberry, Pennsylvania"
+        },
+        {
+            "name": "Seven Springs Mountain Resort",
+            "location": "Seven Springs, Pennsylvania"
+        },
+        {
+            "name": "Snow Creek",
+            "location": "Weston, Missouri"
+        },
+        {
+            "name": "Stevens Pass",
+            "location": "Skykomish, Washington"
+        },
+        {
+            "name": "Stowe Mountain Resort",
+            "location": "Stowe, Vermont"
+        },
+        {
+            "name": "Vail Ski Resort",
+            "location": "Vail, Colorado"
+        },
+        {
+            "name": "Whistler Blackcomb",
+            "location": "Whistler, British Columbia"
+        },
+        {
+            "name": "Whitetail Resort",
+            "location": "Mercersburg, Pennsylvania"
+        },
+        {
+            "name": "Wildcat Mountain Ski Area",
+            "location": "Gorham, New Hampshire"
+        },
+        {
+            "name": "Wilmot Mountain",
+            "location": "Wilmot, Wisconsin"
+        }
+    ]
+}

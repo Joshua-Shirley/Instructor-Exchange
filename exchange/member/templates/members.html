@@ -3,12 +3,16 @@
 <body>
 
 <h1>Members</h1>
-  
-<ul>
-  {% for member in member_list %}
-    <li>{{ member.first_name }} {{ member.last_name }} {{ member.epic_PassNumber }} {{ member.physical_PassNumber }}</li>
-  {% endfor %}
-</ul>
+
+{% if member_list %}
+    <ul>
+    {% for member in member_list %}
+        <li>{{ member.first_name }} {{ member.last_name }} </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No members</p>
+{% endif %}
 
 </body>
 </html>
