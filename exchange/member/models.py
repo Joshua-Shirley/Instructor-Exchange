@@ -13,10 +13,7 @@ class Member(models.Model):
     
     epic_PassNumber = models.BigIntegerField(null=True, verbose_name='Passnumber list on the Epic Mix app.')
     physical_PassNumber = models.BigIntegerField(null=True, verbose_name='Passnumber listed on your printed Epic pass.')
-
-    #ski_area = models.CharField(max_length=100, default='Park City Mountain Resort')
-    #ski_area = models.ForeignKey(Resort, on_delete=models.CASCADE)
-        
+            
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
 

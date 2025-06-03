@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+
+<body>
+
+    <h1>Resorts</h1>
+
+    {% if resort_list %}
+    <ul>
+        {% for resort in resort_list %}
+        <li>{{ resort.name }} {{ resort.location }} </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No resorts saved.</p>
+    {% endif %}
+
+</body>
+
+</html>
