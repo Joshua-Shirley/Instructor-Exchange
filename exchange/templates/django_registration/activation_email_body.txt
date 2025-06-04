@@ -1,0 +1,6 @@
+Hello {{user.username}}
+
+To verify your account follow this link:
+https://{{ site }}/accounts/activate/
+
+Your activation key is: {{ activation_key }}

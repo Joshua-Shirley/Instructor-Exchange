@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% extends 'base.html' %}
+{% comment %}
+Part 2 of 5
+1. Sign Up - registration_form.html
+2. Sign up Done - Sending Email - registration_complete.html
+3. Email Sent - activation_email_subject.txt
+4. Email Opened and link to activation - activation_form.html
+5. Activation code complete - activation_complete.html
+{% endcomment %}
+
+{% block title %}
+App User Registration - Submitted
+{% endblock %}
+
+{% block header %}
+Thanks for registering to our platform.
+{% endblock header %}
+
+{% block content %}
+<p>Check your email account to verify ownership.</p>
+
+<a href="/accounts/activate/">Activate</a>
+{% endblock %}

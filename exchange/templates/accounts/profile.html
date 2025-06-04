@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+User Profile
+{% endblock %}
+
+{% block header %}
+User Profile
+{% endblock header %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-12 mb-3">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" class="form-control" id="username" disabled placeholder="name@example.com"
+                    value="{{ user.username }} ">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address:</label>
+                <input type="email" class="form-control" id="email" disabled placeholder="name@example.com"
+                    value="{{ user.email }}">
+            </div>
+
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Michael"
+                    aria-describedby="user's first name" value="{{ user.first_name }}">
+            </div>
+
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Rogan"
+                    aria-describedby="user's last name" value="{{ user.last_name }}">
+            </div>
+
+            <div class="mb-3">
+                <label for="physicalpass" class="form-label">Pass Number (printed pass)</label>
+                <input type="text" class="form-control" id="physicalpass" placeholder="11165354954"
+                    aria-describedby="user's pass number from printed epic pass" >
+            </div>
+            
+            <div class="mb-3">
+                <label for="epicpass" class="form-label">Epic Pass Number (Epic Mix App)</label>
+                <input type="text" class="form-control" id="epicpass" placeholder="665498326846"
+                    aria-describedby="user's pass number from epic mix app" >
+            </div>            
+
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+    <div class="col-12 mb-3">
+        <a href="{% url 'logout' %}">Sign Out</a>
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

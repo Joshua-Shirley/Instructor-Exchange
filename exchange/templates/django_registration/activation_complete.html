@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% comment %}
+Part 2 of 5
+1. Sign Up - registration_form.html
+2. Sign up Done - Sending Email - registration_complete.html
+3. Email Sent - activation_email_subject.txt
+4. Email Opened and link to activation - activation_form.html
+5. Activation code complete - activation_complete.html
+{% endcomment %}
+
+
+{% block title %}
+App User Registration - Activation Complete
+{% endblock %}
+
+{% block header %}
+Activation Complete 
+{% endblock header %}
+
+{% block content %}
+<p>Congratulations {{ user.username }}</p>
+<p>Welcome to our platform.</p>
+{% endblock %}
