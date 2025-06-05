@@ -6,6 +6,11 @@
   {% load bootstrap5 %}
   {% bootstrap_css %}
   {% bootstrap_javascript %}
+  <style>
+    footer {
+      background-color: white;
+    }
+  </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -13,7 +18,7 @@
     {% include 'menu.html' %}
   </header>
 
-  <main class="flex-grow-1 overflow-auto">
+  <main class="flex-grow-1 overflow-auto mb-5">
     <div class="container">
 
       <div class="mt-2 mb-4">
@@ -26,7 +31,7 @@
     </div>
   </main>
 
-  <footer class="fixed-bottom border-top pt-5 pb-5">
+  <footer class="border-top mt-5 pt-5 pb-5">
     {% include 'footer.html' %}
   </footer>
 </body>

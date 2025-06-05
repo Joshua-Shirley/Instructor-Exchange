@@ -20,7 +20,41 @@ Register a new user.
 {% block content %}
 <form method="POST">
     {% csrf_token %}
-    {{ form.as_p }}
+
+    <div class="mb-3">
+        <label for="username" class="form-label">{{ form.username.label_tag }}</label>
+        <input type="text" class="form-control" id="{{ form.username.name }}" maxlength="150" autocapitalize="none"
+            autocomplete="username" required value="Jacob">
+        <div class="invalid-feedback">{{ form.username.errors }}</div>
+        <span class="helptext">{{ form.username.help_text }}</span>
+    </div>
+
+    <div class="mb-3">
+        <label for="{{ form.email.id_for_label }}" class="form-label">{{ form.email.label_tag }}:</label>
+        <input type="email" class="form-control" id="{{ form.email.id_for_label }}" placeholder="name@example.com" value="jacob@hotmail.com">
+        <div class="invalid-feedback">{{ form.email.error }}</div>
+        <span class="helptext">{{ form.email.help_text }}</span>
+    </div>
+
+    <div class="mb-3">
+        <label for="{{ form.password1.id_for_label }}" class="form-label">{{ form.password1.label_tag }}</label>
+        <input type="password" name="{{ form.password1.name }}" class="form-control" id="{{ form.password1.id_for_label }}" autocomplete="new-password" value="Long_2025_Password">
+        <div class="invalid-feedback">
+            {{ form.password1.errors }}
+        </div>
+        <span class="helptext">{{ form.password1.help_text }}</span>
+    </div>
+
+    <div class="mb-3">
+        <label for="{{ form.password2.id_for_label }}" class="form-label">{{ form.password2.label_tag }}</label>
+        <input type="password" name="{{ form.password2.name }}" class="form-control" id="{{ form.password2.id_for_label }}" autocomplete="new-password" value="Long_2025_Password">        
+        <div class="invalid-feedback">
+            {{ form.password2.errors }}
+        </div>
+        <span class="helptext">{{ form.password2.help_text }}</span>
+    </div>
+        
+    {{ form }}
     <button type="submit" class="btn btn-primary">Register</button>
 </form>
 {% endblock %}
