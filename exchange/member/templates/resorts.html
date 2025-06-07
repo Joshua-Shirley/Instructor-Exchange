@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
 
-<head>
-    {% load bootstrap5 %}
-    {% bootstrap_css %}
-    {% bootstrap_javascript %}
-</head>
+{% block title %}
+Resorts
+{% endblock %}
 
-<body>
+{% block header %}
+Resorts
+{% endblock header %}
 
-    <h1>Resorts</h1>
-
+{% block content %}
     {% if resort_list %}
     <ul>
         {% for resort in resort_list %}
@@ -21,7 +19,4 @@
     <p>No resorts saved.</p>
     {% endif %}
 
-
-</body>
-
-</html>
+{% endblock %}

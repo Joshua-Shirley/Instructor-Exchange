@@ -14,6 +14,12 @@ class Member(models.Model):
     epic_PassNumber = models.BigIntegerField(null=True, verbose_name='Passnumber list on the Epic Mix app.')
     physical_PassNumber = models.BigIntegerField(null=True, verbose_name='Passnumber listed on your printed Epic pass.')
             
+    class Meta:
+        permissions = [
+            ('create_exchange', 'Can exhange available schedule'),
+            ('delete_exchange', 'Can remove exchanged schedule'),
+        ]
+
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
 
